@@ -1,0 +1,31 @@
+<div className="container login-components mt-3 d-flex  justify-content-center">
+    <div class="login-content">
+          <form class="login-form-component">
+              <img src="../../../assets/avatar.svg" alt='' />
+              <h2 class="title-login" >Login</h2>
+              <div class="input-div-login one">
+                  <div class="i">
+                      <i class="icon fas fa-user" ></i>
+                  </div>
+                  <div class="div">
+                      <h5>Email</h5>
+                      <input type="email" class="input-login" />
+                  </div>
+              </div>
+              <div class="input-div-login pass">
+                  <div class="i">
+                      <i class="icon fas fa-lock" ></i>
+                  </div>
+                  <div class="div">
+                      <h5>Password</h5>
+                      <input type="password" class="input-login" />
+                  </div>
+              </div>
+              <span class='forget-password-login' href="#">Forgot Password?</span>
+              <input type="submit" class="btn-login" value="Login"  routerLink="/home"/>
+      <a routerLink="/register" class='register-link'>
+        <input class="btn-login" type='button' value="Register" />
+      </a>
+          </form>
+      </div>
+</div>

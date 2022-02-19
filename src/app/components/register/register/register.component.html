@@ -1,0 +1,142 @@
+
+<div class="container">
+    <div class="container login-components mt-1 d-flex justify-content-center">
+        <div class="login-content">
+                <form class="login-form-component" >
+                <div class='user-registeration-img'>
+                    <img src="" alt=''/>
+                    <i class='camera-register fs-5'></i>
+             <input type="file" name='user-img' alt='' #profilePicture/>
+            </div>
+                <h2 class="title-login" >Register</h2>
+                <div class="input-div-login one">
+                    <div class="i">
+                        <i class="icon fas fa-user" ></i>
+                    </div>
+                    <div class="div">
+                        <input 
+                            type="text" 
+                            name='user-name' 
+                            class="input-login" autoComplete='none' 
+                            placeholder="User Name"
+                            #userName
+
+                        />
+    
+                    </div>
+                </div>
+             
+                <div class="input-div-login one">
+                    <div class="i">
+                        <i class="icon fas fa-user" ></i>
+                    </div>
+                    <div class="div">
+                        <input 
+                            type="text" 
+                            name='user-firstname' 
+                            class="input-login" autoComplete='none'
+                            placeholder="FirstName"
+                            #firstName
+                            />
+    
+                    </div>
+                </div>
+                <div class="input-div-login one">
+                    <div class="i">
+                        <i class="icon fas fa-user" ></i>
+                    </div>
+                    <div class="div">
+                        <input 
+                            type="text" 
+                            name='user-lastname' 
+                            class="input-login" autoComplete='none'
+                            placeholder="LastName"
+                            #lastName
+
+                            />
+        
+                    </div>
+                </div>
+    
+    
+                <div class="input-div-login one">
+                    <div class="i">
+                        <i class="icon fas fa-user" ></i>
+                    </div>
+                    <div class="div">
+                        <input 
+                            type="email" 
+                            name='user-email' 
+                            class="input-login" autoComplete='none'
+                            placeholder="Email"
+                           #email
+
+                            />
+    
+                    </div>
+                </div>
+                <div class="input-div-login one">
+                    <div class="i">
+                        <i class="icon fas fa-user" ></i>
+                    </div>
+                    <div class="div">
+                        <input 
+                            type="text" 
+                            name='user-mobile' 
+                            class="input-login" autoComplete='none'
+                            placeholder="Mobile Number"
+                            #mobile
+
+                            />
+                    </div>
+                </div>
+    
+                <div class="input-div-login one">
+                    <div class="i">
+                        <i class="icon fas fa-lock"></i>
+                    </div>
+                    <div class="div">
+                       <!-- <input placeholder="Gender"> -->
+                            <select  class="input-login" >
+                                <option  >Male</option>
+                                <option > Female</option>
+                            </select>
+                    </div>
+                </div>
+                <div class="input-div-login one">
+                    <div class="i">
+                        <i class="icon fas fa-lock" ></i>
+                    </div>
+                    <div class="div">
+                        <input 
+                            type="password" 
+                            name='user-password'
+                            class="input-login" 
+                            placeholder="Password"    #password/>
+    
+                    </div>
+                </div>
+                <div class="input-div-login one">
+                    <div class="i">
+                        <i class="icon fas fa-lock"></i>
+                    </div>
+                    <div class="div">
+                        <input 
+                            type="password" 
+                            name='user-confirm-password' 
+                            class="input-login"
+                            placeholder="Confirm Password"
+                            #password                             />
+                    </div>
+                </div>
+                <input type="button" class="btn-login" value="Register"    routerLink="/home"
+
+                (click)="addInformation(firstName.value,lastName.value,userName.value,email.value,mobile.value,profilePicture.value)"
+                />
+                <div class="col-lg-12 " *ngFor="let  informations of information">
+                    <p class="text-center">Welcome {{informations.userName}}</p>
+                    </div>
+                </form>
+        </div>
+    </div>
+</div>
